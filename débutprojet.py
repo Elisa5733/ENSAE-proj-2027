@@ -17,19 +17,21 @@ corrections = {
     "Myanmar/Burma": "Myanmar",
     "Palestinian Territories": "Palestine",
     "UK": "United Kingdom",
-    "South Vietnam": "Vietnam", 
     "Cambodia (Kampuchea)": "Cambodia",
-    "Yemen (North Yemen)" : "Yemen",
-    "Yemen Arab Republic" : "Yemen",
-    "Bosnia-Herzegovina" : "Bosnia and Herzegovina",
-    "Yugoslavia": "Yugoslavia", 
-    "Tibet": "China",
+    "Bosnia-Herzegovina": "Bosnia and Herzegovina",
     "Ivory Coast": "Cote d'Ivoire",
-    "East Germany" : "East Germany",
-    "Hyderabad" : "India",
     "Swaziland": "Eswatini",
-    "Princely State of Travencore" :"India", 
     "Macedonia": "North Macedonia",
+    "Hyderabad": "India",
+    "Princely State of Travencore": "India",
+    #problème pour ceux d'après car pas de vraie correspondance mais j'arrive pas à fusionner sans
+    #"South Vietnam": "Vietnam", 
+    #"Yemen (North Yemen)": "Yemen",
+    #"Yemen Arab Republic": "Yemen",
+    #"Yugoslavia": "Serbia", 
+    #"Tibet": "China",
+    #"East Germany": "Germany",
+    
 }
 base1["location"] = base1["location"].replace(corrections)
 
@@ -45,8 +47,7 @@ merged = base1.merge(
 
 print(len(base1), len(merged)) #vérification du nombre de lignes            
 print(merged["_merge"].value_counts())
-
+manquants = merged.loc[merged["_merge"] == "left_only", "location"].value_counts()
+print(manquants) #regarder les pays qui n'ont pas pu fusionner
 
 print(merged[["location", "year", "Population"]].head(20))
-manquants = merged.loc[merged["_merge"] == "left_only", "location"].value_counts()
-print(manquants)
