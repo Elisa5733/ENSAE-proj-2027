@@ -69,3 +69,6 @@ spearman_corr, p_value = stats.spearmanr( df["pourcent_part"], df["progress2"]) 
 
 print(f"Corr de Spearman : {spearman_corr:.4f}")
 print(f"P-value : {p_value:.4e}")
+
+max_pourcent = merged["pourcent_part"].max()
+print(f"Pourcentage maximum de participation : {max_pourcent:.2f}%") #regarder pk on dépasse 100%
