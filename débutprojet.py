@@ -69,6 +69,12 @@ merged["pourcent_part"] = (merged["total_part_clean"] / merged["Population"]) * 
 
 print(merged[["location", "year", "total_part_clean", "Population", "pourcent_part"]].head(10))
 
+print(merged.loc[merged["pourcent_part"] > 20, ["id","location","camp_name", "year","total_part_clean","pourcent_part","Population"]])
+#regarder les valeurs aberrantes 
+
+masque_50 = merged["pourcent_part"] > 50 #après vérification des sources, toutes les valeurs sup à 50 % sont issues d'erreurs dans la base 2-1
+merged.loc[masque_50, ["total_part_clean", "pourcent_part"]] = np.nan #on remplace ces valeurs par des valeurs manquantes
+
 
 df = merged.dropna(subset=["pourcent_part", "progress"]).copy() #enlever valeurs manquantes dans progress et pourcent
 
@@ -80,9 +86,6 @@ spearman_corr, p_value = stats.spearmanr( df["pourcent_part"], df["progress2"]) 
 print(f"Corr de Spearman : {spearman_corr:.4f}") #ici on regarde année par année les mouvements donc certains sont représentés plusieurs fois
 print(f"P-value : {p_value:.4e}")
 
-
-print(merged.loc[merged["pourcent_part"] > 20, ["id","location","year","total_part_clean","pourcent_part","Population"]])
-#regarder les valeurs aberrantes 
 
 # une ligne par mouvement : pic de participation + succès (dernière ligne)
 mouv = (
