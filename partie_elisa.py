@@ -54,8 +54,3 @@ ct = pd.crosstab(net["violente"], net["success"])
 print("\n", ct)
 odds, p = stats.fisher_exact(ct)
 print(f"\nOdds ratio = {odds:.2f}, p = {p:.2e}")
-
-
-d = net.dropna(subset=["intensite_max"])
-print("\n", pd.crosstab(d["violente"], d["intensite_max"]))
-print(d.groupby(["violente", "intensite_max"])["success"].agg(taux="mean", n="count").round(3))
