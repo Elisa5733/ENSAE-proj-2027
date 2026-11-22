@@ -9,7 +9,7 @@ Dans le contexte actuel de mobilisations en Europe, nous avons décidé de mettr
 
 
 **Problématique** :  
-Qu'est-ce qu'un soulèvement réussi ? La participation suffit-elle à expliquer le succès ?
+Qu'est-ce qu'un soulèvement réussi ? La participation suffit-elle à expliquer le succès d'une mobilisation ?
 
 
 ## Données utilisées
