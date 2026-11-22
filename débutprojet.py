@@ -103,8 +103,12 @@ print(mouv.shape)
 
 print("Mouvements sans pic calculable :", mouv["pic_pourcent"].isna().sum())
 
-mouv2 = mouv.dropna(subset=["pic_pourcent"]).copy()   
-mouv2.to_csv("mouvements.csv", index=False)
 
-mouv2["tranche"] = pd.qcut(mouv2["pic_pourcent"], q=10, duplicates="drop")
-print(mouv2.groupby("tranche", observed=True)["success"].agg(n="count", taux="mean"))
+mouv = mouv.dropna(subset=["pic_pourcent"]).copy()    
+mouv["tranche"] = pd.qcut(mouv["pic_pourcent"], q=10, duplicates="drop")
+print(mouv.groupby("tranche", observed=True)["success"].agg(n="count", taux="mean"))
+
+mouv["au_dessus"] = mouv["pic_pourcent"] >= 3.5
+print(mouv.groupby("au_dessus")["success"].agg(n="count", taux="mean"))
+print(mouv[(mouv["au_dessus"]) & (mouv["success"] == 0)])   # les exceptions
+
