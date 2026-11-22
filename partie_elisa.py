@@ -62,3 +62,18 @@ print(d.groupby(["violente", "intensite_max"])["success"]
     .agg(taux="mean", n="count")
     .round(3)) # taux de succès selon la violence et l'intensité
 
+
+# ---------- Graphiques ----------
+
+import matplotlib.pyplot as plt
+
+df = camp[camp["issue"] != "en_cours"].copy() # enlever les lignes avec valeur "en_cours" car leur résultat définitif n'est pas encore connu
+df["methode"] = df["violente"].map({0: "Non violente", 1: "Violente"}) # nouvelle colonne avec la méthode (violente/non violente)
+
+# Graph 1 : succès selon la méthode
+(df.groupby("methode")["success"].mean() * 100).plot(kind="bar", color=["#7AA95C", "#A7001E"])
+plt.ylabel("Taux de succès (%)")
+plt.title("Taux de succès selon la méthode")
+plt.xticks(rotation=0)
+plt.savefig("graph1_succes_methode.png", dpi=200, bbox_inches="tight")
+plt.show()
