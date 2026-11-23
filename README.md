@@ -2,7 +2,7 @@
 
 *Par Elisa Desloges, Maxime Girard, Amélie Thiebault* 
 
-# Table des matières
+## Table des matières
 1. [Sujet](#sujet)
 2. [Problématique](#pblm)
 3. [Données utilisées](#donnees)
