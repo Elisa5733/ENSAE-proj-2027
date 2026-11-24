@@ -38,3 +38,5 @@ Toutes les étapes de nettoyage, de corrections et les merges sur les données u
 Dans le dossier ```Data```, on retrouve les bases de données que nous avons utilisé pour ce projet.
 
 Le dossier ```Graphiques``` est consacré à tous les graphiques qui apparaissent dans notre projet.
+
+Avant d'exécuter le notebook, il faut installer la bibliothèque python-calamine (dans un terminal, saisir pip install python-calamine).
