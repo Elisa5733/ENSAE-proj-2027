@@ -33,8 +33,8 @@ Nous avons utilisé deux bases de données pour ce projet :
 ## 4. Présentation du dépôt <a name="pres">
 
 La partie essentielle de notre projet se trouve dans le fichier ```Main_notebook.ipynb``` qui contient les principales étapes de l'analyse ainsi que les résultats. Le code a été exécuté en amont pour pouvoir présenter les résultats. 
-Toutes les étapes de nettoyage, de corrections et les merges sur les données utilisées se troivent dans le deuxième fichier : ```Cleanup.ipynb```
+Toutes les étapes de nettoyage, de corrections et les merges sur les données utilisées se trouvent dans le deuxième fichier : ```Cleanup.ipynb```
 
 Dans le dossier ```Data```, on retrouve les bases de données que nous avons utilisé pour ce projet.
 
-Le dossier ```Graphiques``` est consacré à tous les graphiques qui apparraissent dans notre projet.
+Le dossier ```Graphiques``` est consacré à tous les graphiques qui apparaissent dans notre projet.
