@@ -1,6 +1,6 @@
 # Projet Python pour la Data Science
 
-*Par Elisa Desloges, Maxime Girard, Amélie Thiebault* 
+*Par Elisa Desloges, Maxime Girard, Amélie Thiebot* 
 
 ## Table des matières
 1. [Sujet](#sujet)
