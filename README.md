@@ -13,14 +13,14 @@
 
 3,5 % : c’est la part de la population qu’il faudrait pour faire tomber n’importe quel gouvernement.
 
-Cette règle a été théorisée par la chercheuse américaine Erica Chenoweth en 2013 dans *Why Civil Resistance Works*. En étudiant 323 mouvements de contestation entre 1900 et 2006, les chercheuses ont observé qu'aucun gouvernement n'a résisté face à un mouvement de résistance civile non violente ayant réussi à mobiliser au moins 3,5 % de la population de son pays au plus fort de la crise.
+Cette règle a été théorisée par la chercheuse américaine Erica Chenoweth et sa consœur Maria J. Stephan en 2013 dans *Why Civil Resistance Works*. En étudiant 323 mouvements de contestation entre 1900 et 2006, les chercheuses ont observé qu'aucun gouvernement n'a résisté face à un mouvement civil non violent ayant réussi à mobiliser au moins 3,5 % de la population de son pays au plus fort de la crise.
 
-Dans le contexte actuel de mobilisations en Europe, nous avons décidé de mettre à l’épreuve cette règle et d’analyser ce qui fait qu’une mobilisation réussie ou non.
+Dans le contexte actuel de mobilisations en Europe, nous avons décidé de mettre à l’épreuve cette règle et d’analyser ce qui fait qu’un mouvement réussit ou non.
 
 
 ## 2. Problématique <a name="pblm">
 
-Qu'est-ce qu'un soulèvement réussi ? La participation suffit-elle à expliquer le succès d'une mobilisation ?
+Pour comprendre les ressorts réels d'une contestation efficace, deux questions s'imposent. Qu'est-ce qu'un soulèvement réussi ? La seule masse des participants suffit-elle à expliquer le succès d'une mobilisation ? 
 
 
 ## 3. Données utilisées <a name="donnees">
@@ -32,6 +32,9 @@ Nous avons utilisé deux bases de données pour ce projet :
 
 ## 4. Présentation du dépôt <a name="pres">
 
-Notre projet se trouve dans le fichier ```Main_notebook.ipynb```. Le code a été exécuté en amont pour pouvoir présenter les résultats. 
+La partie essentielle de notre projet se trouve dans le fichier ```Main_notebook.ipynb``` qui contient les principales étapes de l'analyse ainsi que les résultats. Le code a été exécuté en amont pour pouvoir présenter les résultats. 
+Toutes les étapes de nettoyage, de corrections et les merges sur les données utilisées se trouvent dans le deuxième fichier : ```Cleanup.ipynb```
 
 Dans le dossier ```Data```, on retrouve les bases de données que nous avons utilisé pour ce projet.
+
+Le dossier ```Graphiques``` est consacré à tous les graphiques qui apparaissent dans notre projet.
