@@ -20,7 +20,7 @@ Dans le contexte actuel de mobilisations en Europe, nous avons décidé de mettr
 
 ## 2. Problématique <a name="pblm">
 
-Qu'est-ce qu'un soulèvement réussi ? La participation suffit-elle à expliquer le succès d'une mobilisation ?
+Pour comprendre les ressorts réels d'une contestation efficace, deux questions s'imposent. Qu'est-ce qu'un soulèvement réussi ? La seule masse des participants suffit-elle à expliquer le succès d'une mobilisation ? 
 
 
 ## 3. Données utilisées <a name="donnees">
