@@ -40,3 +40,4 @@ Dans le dossier ```Data```, on retrouve les bases de données que nous avons uti
 Le dossier ```Graphiques``` est consacré à tous les graphiques qui apparaissent dans notre projet.
 
 Avant d'exécuter le notebook, il faut installer la bibliothèque python-calamine (dans un terminal, saisir pip install python-calamine).
+Les cellules de main_notebook doivent être effectuées dans l'ordre. Les cellules de cleanup sont exécutées automatiquement depuis main_notebook.
